@@ -19,16 +19,16 @@ import {
 } from "recharts"
 import { AxisDomain } from "recharts/types/util/types"
 
+import { useOnWindowResize } from "@/hooks/useOnWindowResize"
 import {
   AvailableChartColors,
   AvailableChartColorsKeys,
   constructCategoryColors,
   getColorClassName,
-  getYAxisDomain,
-  hasOnlyOneValueForKey,
-} from "@/lib/chartUtils"
-import { useOnWindowResize } from "@/hooks/useOnWindowResize"
-import { cx } from "@/lib/utils"
+} from "@/lib/chartColors"
+import { cx } from "@/lib/cx"
+import { getYAxisDomain } from "@/lib/getYAxisDomain"
+import { hasOnlyOneValueForKey } from "@/lib/hasOnlyOneValueForKey"
 
 //#region Legend
 
